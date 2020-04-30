@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Memory Game</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="header">
+    <div class="moves">
+        <h1 style="color: white;font-size: 35px">Moves:<m id="move">65</m></h1>
+    </div>
+    <div style="margin-left: 50%;transform: translate(-45%, 0%);color: white"><h2>The Missing Emojis!</h2></div>
+<!--    <div style="margin-top:0;margin-left: 60%;width:7%;height: 100%;border:1px solid black"><img style="width:100%" src="img/20.JPG"/></div>-->
+
+</div>
+<div class="board">
+    <div class="card" data-emoji="1">
+        <img class="front-face" src="img/1.jpg" alt="1">
+        <img class="back-face" src="img/back.jpg" alt="back_card">
+    </div>
+    <div class="card" data-emoji="1">
+        <img class="front-face" src="img/1.jpg" alt="1">
+        <img class="back-face" src="img/back.jpg" alt="back_card">
+    </div>
+    <div class="card" data-emoji="3">
+        <img class="front-face" src="img/3.JPG" alt="2">
+        <img class="back-face" src="img/back.jpg" alt="back_card">
+    </div>
+    <div class="card" data-emoji="3">
+        <img class="front-face" src="img/3.JPG" alt="2">
+        <img class="back-face" src="img/back.jpg" alt="back_card">
+    </div>
+    <div class="card" data-emoji="2">
+        <img class="front-face" src="img/2.jpg" alt="3">
+        <img class="back-face" src="img/back.jpg" alt="back_card">
+    </div>
+    <div class="card" data-emoji="2">
+        <img class="front-face" src="img/2.jpg" alt="3">
+        <img class="back-face" src="img/back.jpg" alt="back_card">
+    </div>
+    <div class="card" data-emoji="4">
+        <img class="front-face" src="img/4.JPG" alt="4">
+        <img class="back-face" src="img/back.jpg" alt="back_card">
+    </div>
+    <div class="card" data-emoji="4">
+        <img class="front-face" src="img/4.JPG" alt="4">
+        <img class="back-face" src="img/back.jpg" alt="back_card">
+    </div>
+    <div class="card" data-emoji="5">
+        <img class="front-face" src="img/5.JPG" alt="5">
+        <img class="back-face" src="img/back.jpg" alt="back_card">
+    </div>
+    <div class="card" data-emoji="5">
+        <img class="front-face" src="img/5.JPG" alt="5">
+        <img class="back-face" src="img/back.jpg" alt="back_card">
+    </div>
+    <div class="card" data-emoji="6">
+        <img class="front-face" src="img/6.JPG" alt="6">
+        <img class="back-face" src="img/back.jpg" alt="back_card">
+    </div>
+    <div class="card" data-emoji="6">
+        <img class="front-face" src="img/6.JPG" alt="6">
+        <img class="back-face" src="img/back.jpg" alt="back_card">
+    </div>
+    <div class="card" data-emoji="1">
+        <img class="front-face" src="img/1.jpg" alt="1">
+        <img class="back-face" src="img/back.jpg" alt="back_card">
+    </div>
+    <div class="card" data-emoji="1">
+        <img class="front-face" src="img/1.jpg" alt="1">
+        <img class="back-face" src="img/back.jpg" alt="back_card">
+    </div>
+    <div class="card" data-emoji="19">
+        <img class="front-face" src="img/19.JPG" alt="2">
+        <img class="back-face" src="img/back.jpg" alt="back_card">
+    </div>
+    <div class="card" data-emoji="19">
+        <img class="front-face" src="img/19.JPG" alt="2">
+        <img class="back-face" src="img/back.jpg" alt="back_card">
+    </div>
+    <div class="card" data-emoji="18">
+        <img class="front-face" src="img/18.JPG" alt="3">
+        <img class="back-face" src="img/back.jpg" alt="back_card">
+    </div>
+    <div class="card" data-emoji="17">
+        <img class="front-face" src="img/17.JPG" alt="3">
+        <img class="back-face" src="img/back.jpg" alt="back_card">
+    </div>
+    <div class="card" data-emoji="16">
+        <img class="front-face" src="img/16.JPG" alt="4">
+        <img class="back-face" src="img/back.jpg" alt="back_card">
+    </div>
+    <div class="card" data-emoji="18">
+        <img class="front-face" src="img/18.JPG" alt="4">
+        <img class="back-face" src="img/back.jpg" alt="back_card">
+    </div>
+    <div class="card" data-emoji="17">
+        <img class="front-face" src="img/17.JPG" alt="5">
+        <img class="back-face" src="img/back.jpg" alt="back_card">
+    </div>
+    <div class="card" data-emoji="16">
+        <img class="front-face" src="img/16.JPG" alt="5">
+        <img class="back-face" src="img/back.jpg" alt="back_card">
+    </div>
+    <div class="card" data-emoji="15">
+        <img class="front-face" src="img/15.JPG" alt="6">
+        <img class="back-face" src="img/back.jpg" alt="back_card">
+    </div>
+    <div class="card" data-emoji="15">
+        <img class="front-face" src="img/15.JPG" alt="6">
+        <img class="back-face" src="img/back.jpg" alt="back_card">
+    </div>
+    <div class="card" data-emoji="1">
+        <img class="front-face" src="img/1.jpg" alt="1">
+        <img class="back-face" src="img/back.jpg" alt="back_card">
+    </div>
+    <div class="card" data-emoji="1">
+        <img class="front-face" src="img/1.jpg" alt="1">
+        <img class="back-face" src="img/back.jpg" alt="back_card">
+    </div>
+    <div class="card" data-emoji="14">
+        <img class="front-face" src="img/14.JPG" alt="2">
+        <img class="back-face" src="img/back.jpg" alt="back_card">
+    </div>
+    <div class="card" data-emoji="14">
+        <img class="front-face" src="img/14.JPG" alt="2">
+        <img class="back-face" src="img/back.jpg" alt="back_card">
+    </div>
+    <div class="card" data-emoji="13">
+        <img class="front-face" src="img/13.JPG" alt="3">
+        <img class="back-face" src="img/back.jpg" alt="back_card">
+    </div>
+    <div class="card" data-emoji="13">
+        <img class="front-face" src="img/13.JPG" alt="3">
+        <img class="back-face" src="img/back.jpg" alt="back_card">
+    </div>
+    <div class="card" data-emoji="12">
+        <img class="front-face" src="img/12.JPG" alt="4">
+        <img class="back-face" src="img/back.jpg" alt="back_card">
+    </div>
+    <div class="card" data-emoji="12">
+        <img class="front-face" src="img/12.JPG" alt="4">
+        <img class="back-face" src="img/back.jpg" alt="back_card">
+    </div>
+    <div class="card" data-emoji="10">
+        <img class="front-face" src="img/10.JPG" alt="5">
+        <img class="back-face" src="img/back.jpg" alt="back_card">
+    </div>
+    <div class="card" data-emoji="9">
+        <img class="front-face" src="img/9.JPG" alt="5">
+        <img class="back-face" src="img/back.jpg" alt="back_card">
+    </div>
+    <div class="card" data-emoji="11">
+        <img class="front-face" src="img/11.JPG" alt="6">
+        <img class="back-face" src="img/back.jpg" alt="back_card">
+    </div>
+    <div class="card" data-emoji="11">
+        <img class="front-face" src="img/11.JPG" alt="6">
+        <img class="back-face" src="img/back.jpg" alt="back_card">
+    </div>
+    <div class="card" data-emoji="9">
+        <img class="front-face" src="img/9.JPG" alt="4">
+        <img class="back-face" src="img/back.jpg" alt="back_card">
+    </div>
+    <div class="card" data-emoji="10">
+        <img class="front-face" src="img/10.JPG" alt="4">
+        <img class="back-face" src="img/back.jpg" alt="back_card">
+    </div>
+    <div class="card" data-emoji="8">
+        <img class="front-face" src="img/8.JPG" alt="5">
+        <img class="back-face" src="img/back.jpg" alt="back_card">
+    </div>
+    <div class="card" data-emoji="8">
+        <img class="front-face" src="img/8.JPG" alt="5">
+        <img class="back-face" src="img/back.jpg" alt="back_card">
+    </div>
+    <div class="card" data-emoji="7">
+        <img class="front-face" src="img/7.JPG" alt="6">
+        <img class="back-face" src="img/back.jpg" alt="back_card">
+    </div>
+    <div class="card" data-emoji="7">
+        <img class="front-face" src="img/7.JPG" alt="6">
+        <img class="back-face" src="img/back.jpg" alt="back_card">
+    </div>
+</div>
+<div class="gameOver" id="hide" style="display: none;">
+<center>
+    <img style="border-radius: 90px" src="img/9.JPG"/>
+    <h1>---Time Out---</h1>
+    <h1>Try Again!</h1>
+    <a href="index.html" class="btn btn-primary">Play</a>
+</center>
+</div>
+<audio id="audio" src="img/sound.mp3"></audio>
+<audio id="match" src="img/match.mp3"></audio>
+<audio id="fail" src="img/fail.mp3"></audio>
+<script src="script.js"></script>
+</body>
+</html>
